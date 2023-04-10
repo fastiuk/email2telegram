@@ -21,10 +21,8 @@ ENV IMAP_USER "user"
 ENV IMAP_PASSWORD "pass"
 ENV TELEGRAM_BOT_TOKEN ""
 ENV TELEGRAM_CHAT_ID ""
-
-RUN j2 mailToTelegramForwarder.conf.j2 > mailToTelegramForwarder.conf
-RUN cat mailToTelegramForwarder.conf
-
+ENV MAIL_SUBJECT ""
+ENV READ_OLD_MAILS "False"
 
 #CMD ./start.sh
 ENTRYPOINT ./start.sh
