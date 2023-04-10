@@ -1,0 +1,70 @@
+[Mail]
+# IMAP user
+user: {{ IMAP_USER }}
+# IMAP password
+password: {{ IMAP_PASSWORD }}
+
+# IMAP server
+server: {{ IMAP_SERVER }}
+# IMAP port (default: 993)
+#port: <IMAP mail server port like 993>
+# IMAP connection timout in seconds (default: 60)
+#timeout: 60
+
+# use timer in seconds
+#refresh: 10
+
+# disconnect after each loop, not recommended for short refresh rates: [True|False]
+#disconnect: False
+
+# IMAP folder on server to check, ex.: INBOX (default)
+#folder: <IMAP (sub)folder on server>
+
+# This is from IMAP, "ALL" is also useful. Check IMAP specs for more info.
+# Placeholder "${lastUID}" is used to process new mails only (since last loop)
+# Ex.:
+# UID:                                      Mail ID on server
+# UNSEEN:                                   Unseen mails, and mark them as seen
+# HEADER <header field> "<search string>":  Search mails by header, ex.:
+#search: (UID ${lastUID}:* UNSEEN HEADER Subject "<Subject or Part of Subject>")
+# Default:
+#search: (UID ${lastUID}:* UNSEEN)
+
+# Read mails received before application was started (default: False)
+# see command line option "-o" or "--read-old-mails" for one-time use
+#read_old_mails: False
+
+# max length (characters) of forwarded mail content
+#max_length: 2000
+
+# ignore inline image by regular expression
+#ignore_inline_image: (spacer\.gif)
+
+# Not yet available:
+#   # use IMAPE IDLE (push) mode [True|False]
+#   push_mode: False
+# Not yet available (see IMAP UNSEEN: If used all found mails will be marked as seen for now):
+#   # mark forwarded message as read: [True|False]
+#   mark_as_read: False
+
+
+[Telegram]
+# from @BotFather: Like "<Bot ID:Key>"
+bot_token: <Bot Token>
+# ID of TG chat or user (<ID>, ex.: 123456) who gets forwarded messages.
+# ID can be found by @myidbot (Bot commands: /start + /getid)
+forward_to_chat_id: <Chat/User ID>
+
+# markdown version: [1|2]
+#markdown_version: 2
+
+# prefer HTML messages: [True|False]
+# Prefers HTML Content over plain text part of mail and send HTML formatted messages to Telgram
+#prefer_html: True
+
+# forward attachments: [True|False]
+#forward_mail_content: True
+# forward attachments: [True|False]
+#forward_attachment: True
+# forward embedded images: [True|False]
+#forward_embedded_images: True
