@@ -1,0 +1,3 @@
+[submodule "MailToTelegramForwarder"]
+	path = MailToTelegramForwarder
+	url = ../MailToTelegramForwarder.git
