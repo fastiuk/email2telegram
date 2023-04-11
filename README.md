@@ -2,7 +2,7 @@
 [![Powered by: MailToTelegramForwarder](https://img.shields.io/badge/Powered%20by-MailToTelegramForwarder-red.svg?style=flat-square)](https://github.com/awalon/MailToTelegramForwarder)
 
 [![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=flat-square&logo=docker&logoColor=white)](https://hub.docker.com/repository/docker/fastiuk/email2telegram)
-![GitHub CI](https://img.shields.io/github/actions/workflow/status/fastiuk/email2telegram/docker-image.yml?branch=main&label=CI&style=flat-square&logo=github)
+[![GitHub CI](https://img.shields.io/github/actions/workflow/status/fastiuk/email2telegram/docker-image.yml?branch=main&label=CI&style=flat-square&logo=github)](https://github.com/fastiuk/email2telegram/actions)
 [![GitHub issues](https://img.shields.io/github/issues/fastiuk/email2telegram?style=flat-square)](https://github.com/fastiuk/email2telegram/issues)
 ![Protocol: IMAP](https://img.shields.io/badge/Protocol-IMAP-blue?style=flat-square&logo=Gmail)
 ![API: Telegram Bot](https://img.shields.io/badge/API-Telegram_Bot-informational?style=flat-square&logo=telegram)
