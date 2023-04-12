@@ -45,7 +45,7 @@ docker run \
 ## License
 
 This project and MailToTelegramForwarder are licensed under the *GPLv3 License* - see the 
-[LICENSE.md](LICENSE.md) file for details.
+[LICENSE](LICENSE) file for details.
 
 Some parts (from IMAPBot) are licensed under the *The MIT License (MIT)* - 
-see the [LICENSE-MIT.md](LICENSE-MIT.md) file for details.
+see the [LICENSE-MIT.md](https://github.com/awalon/MailToTelegramForwarder/blob/master/LICENSE-MIT.md) file for details.
