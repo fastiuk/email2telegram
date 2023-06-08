@@ -40,6 +40,11 @@ read_old_mails: {{ READ_OLD_MAILS }}
 # ignore inline image by regular expression
 #ignore_inline_image: (spacer\.gif)
 
+# Cut string from subject. Useful for automations with the same subject prefix.
+# Usually, you don't like to see those prefixes. You need to escape characters
+# like "[" or "."
+cut_from_subject: {{ CUT_FROM_SUBJECT }}
+
 # Not yet available:
 #   # use IMAPE IDLE (push) mode [True|False]
 #   push_mode: False
@@ -63,7 +68,7 @@ forward_to_chat_id: {{ TELEGRAM_CHAT_ID }}
 #prefer_html: True
 
 # forward attachments: [True|False]
-#forward_mail_content: True
+forward_mail_content: {{ FORWARD_MAIL_CONTENT }}
 # forward attachments: [True|False]
 #forward_attachment: True
 # forward embedded images: [True|False]

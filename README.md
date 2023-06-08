@@ -31,6 +31,8 @@ docker run \
     -e TELEGRAM_CHAT_ID=<Chat ID> \
     -e READ_OLD_MAILS=False \
     -e MAIL_SUBJECT=<Subject to match> \
+    -e FORWARD_MAIL_CONTENT=True \
+    -e CUT_FROM_SUBJECT="test "
     email2telegram
 ```
 
