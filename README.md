@@ -1,14 +1,12 @@
-[![Project: email2telegram](https://img.shields.io/badge/Project-email2telegram-red.svg?style=flat-square)](https://github.com/fastiuk/email2telegram)
-[![Powered by: MailToTelegramForwarder](https://img.shields.io/badge/Powered%20by-MailToTelegramForwarder-red.svg?style=flat-square)](https://codeberg.org/Awalon/MailToTelegramForwarder)
-
-[![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=flat-square&logo=docker&logoColor=white)](https://hub.docker.com/repository/docker/fastiuk/email2telegram)
-[![GitHub CI](https://img.shields.io/github/actions/workflow/status/fastiuk/email2telegram/docker-image.yml?branch=main&label=CI&style=flat-square&logo=github)](https://github.com/fastiuk/email2telegram/actions)
-[![GitHub issues](https://img.shields.io/github/issues/fastiuk/email2telegram?style=flat-square)](https://github.com/fastiuk/email2telegram/issues)
-![Protocol: IMAP](https://img.shields.io/badge/Protocol-IMAP-blue?style=flat-square&logo=Gmail)
-![API: Telegram Bot](https://img.shields.io/badge/API-Telegram_Bot-informational?style=flat-square&logo=telegram)
-[![License: GPL + MIT](https://img.shields.io/badge/license-GPL+MIT-informational?style=flat-square)](README.md#license)
-[![GitHub forks](https://img.shields.io/github/forks/fastiuk/email2telegram?style=flat-square)](https://github.com/fastiuk/email2telegram/network) 
-[![GitHub stars](https://img.shields.io/github/stars/fastiuk/email2telegram?style=flat-square)](https://github.com/fastiuk/email2telegram/stargazers)
+[![CI](https://img.shields.io/github/actions/workflow/status/fastiuk/email2telegram/docker-image.yml?branch=main&label=CI&logo=githubactions&logoColor=white)](https://github.com/fastiuk/email2telegram/actions/workflows/docker-image.yml)
+[![Build](https://img.shields.io/github/actions/workflow/status/fastiuk/email2telegram/docker-publish.yml?branch=main&label=build&logo=docker&logoColor=white)](https://github.com/fastiuk/email2telegram/actions/workflows/docker-publish.yml)
+[![Version](https://img.shields.io/docker/v/fastiuk/email2telegram?sort=semver&label=version&logo=docker&logoColor=white)](https://hub.docker.com/r/fastiuk/email2telegram/tags)
+[![Docker pulls](https://img.shields.io/docker/pulls/fastiuk/email2telegram?logo=docker&logoColor=white)](https://hub.docker.com/r/fastiuk/email2telegram)
+[![Image size](https://img.shields.io/docker/image-size/fastiuk/email2telegram/latest?logo=docker&logoColor=white)](https://hub.docker.com/r/fastiuk/email2telegram/tags)
+[![Platform](https://img.shields.io/badge/platform-amd64%20%7C%20arm64%20%7C%20arm%2Fv7-blue?logo=linux&logoColor=white)](#running-the-app)
+[![Python](https://img.shields.io/badge/base-Python%203.13%20slim-3776AB?logo=python&logoColor=white)](https://hub.docker.com/_/python)
+[![Powered by MailToTelegramForwarder](https://img.shields.io/badge/powered%20by-MailToTelegramForwarder-red?logo=telegram&logoColor=white)](https://codeberg.org/Awalon/MailToTelegramForwarder)
+[![License](https://img.shields.io/github/license/fastiuk/email2telegram)](LICENSE)
 
 # email2telegram
 Email to Telegram forwarder docker service.
