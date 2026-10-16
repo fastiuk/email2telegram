@@ -1,0 +1,30 @@
+name: Docker Hub description
+
+on:
+  push:
+    branches: [ "main" ]
+    paths:
+      - README.md
+      - .github/workflows/dockerhub-description.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  description:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v7
+
+    # needs a token with read/write/delete scope
+    - uses: peter-evans/dockerhub-description@v5
+      with:
+        username: ${{ vars.DOCKERHUB_USERNAME || github.repository_owner }}
+        password: ${{ secrets.DOCKERHUB_TOKEN }}
+        repository: ${{ github.repository }}
+        short-description: Forward IMAP email (text, images, attachments) to a Telegram chat via your bot
+        readme-filepath: ./README.md
+        enable-url-completion: true
