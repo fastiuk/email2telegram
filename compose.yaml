@@ -1,0 +1,5 @@
+services:
+  email2telegram:
+    image: fastiuk/email2telegram:latest
+    restart: unless-stopped
+    env_file: .env

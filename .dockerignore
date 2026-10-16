@@ -1,0 +1,6 @@
+*
+!requirements.txt
+!render_config.py
+!start.sh
+!mailToTelegramForwarder.conf.j2
+!MailToTelegramForwarder/mailToTelegramForwarder.py
