@@ -6,6 +6,9 @@ on:
   pull_request:
     branches: [ "main" ]
 
+permissions:
+  contents: read
+
 jobs:
 
   build:
@@ -13,8 +16,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v7
       with:
         submodules: recursive
+
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag email2telegram:$(date +%s)
+      run: docker build . --file Dockerfile --tag email2telegram:test
+
+    - name: Fail fast without required settings
+      run: "! docker run --rm email2telegram:test"
+
+    - name: End-to-end test
+      run: tests/e2e.sh email2telegram:test

@@ -1,5 +1,10 @@
-#!/bin/bash
+#!/bin/sh
+set -eu
 
-j2 mailToTelegramForwarder.conf.j2 > mailToTelegramForwarder.conf
-cat /app/mailToTelegramForwarder.conf
-/app/mailToTelegramForwarder.py --config /app/mailToTelegramForwarder.conf
+CONFIG=/tmp/mailToTelegramForwarder.conf
+
+# the rendered config holds credentials: keep it private and never print it
+umask 077
+python3 /app/render_config.py /app/mailToTelegramForwarder.conf.j2 > "$CONFIG"
+
+exec python3 /app/mailToTelegramForwarder.py --config "$CONFIG"
