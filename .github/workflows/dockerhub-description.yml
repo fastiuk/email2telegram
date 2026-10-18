@@ -11,16 +11,23 @@ on:
 permissions:
   contents: read
 
+# only the latest README matters
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
+
 jobs:
   description:
 
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v7
+    - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      with:
+        persist-credentials: false
 
     # needs a token with read/write/delete scope
-    - uses: peter-evans/dockerhub-description@v5
+    - uses: peter-evans/dockerhub-description@1b9a80c056b620d92cedb9d9b5a223409c68ddfa # v5.0.0
       with:
         username: ${{ vars.DOCKERHUB_USERNAME || github.repository_owner }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
