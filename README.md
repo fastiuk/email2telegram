@@ -1,15 +1,22 @@
+[![GitHub](https://img.shields.io/badge/GitHub-fastiuk%2Femail2telegram-181717?logo=github&logoColor=white)](https://github.com/fastiuk/email2telegram)
+[![Docker Hub](https://img.shields.io/badge/Docker%20Hub-fastiuk%2Femail2telegram-2496ED?logo=docker&logoColor=white)](https://hub.docker.com/r/fastiuk/email2telegram)
+[![Release](https://img.shields.io/github/v/release/fastiuk/email2telegram?logo=github&logoColor=white)](https://github.com/fastiuk/email2telegram/releases)
 [![CI](https://img.shields.io/github/actions/workflow/status/fastiuk/email2telegram/docker-image.yml?branch=main&label=CI&logo=githubactions&logoColor=white)](https://github.com/fastiuk/email2telegram/actions/workflows/docker-image.yml)
 [![Build](https://img.shields.io/github/actions/workflow/status/fastiuk/email2telegram/docker-publish.yml?branch=main&label=build&logo=docker&logoColor=white)](https://github.com/fastiuk/email2telegram/actions/workflows/docker-publish.yml)
 [![Version](https://img.shields.io/docker/v/fastiuk/email2telegram?sort=semver&label=version&logo=docker&logoColor=white)](https://hub.docker.com/r/fastiuk/email2telegram/tags)
 [![Docker pulls](https://img.shields.io/docker/pulls/fastiuk/email2telegram?logo=docker&logoColor=white)](https://hub.docker.com/r/fastiuk/email2telegram)
 [![Image size](https://img.shields.io/docker/image-size/fastiuk/email2telegram/latest?logo=docker&logoColor=white)](https://hub.docker.com/r/fastiuk/email2telegram/tags)
 [![Platform](https://img.shields.io/badge/platform-amd64%20%7C%20arm64%20%7C%20arm%2Fv7-blue?logo=linux&logoColor=white)](#running-the-app)
-[![Python](https://img.shields.io/badge/base-Python%203.13%20slim-3776AB?logo=python&logoColor=white)](https://hub.docker.com/_/python)
+[![Python](https://img.shields.io/badge/base-Python%20slim-3776AB?logo=python&logoColor=white)](https://hub.docker.com/_/python)
 [![Powered by MailToTelegramForwarder](https://img.shields.io/badge/powered%20by-MailToTelegramForwarder-red?logo=telegram&logoColor=white)](https://codeberg.org/Awalon/MailToTelegramForwarder)
 [![License](https://img.shields.io/github/license/fastiuk/email2telegram)](LICENSE)
 
 # email2telegram
 Email to Telegram forwarder docker service.
+
+Source: [GitHub](https://github.com/fastiuk/email2telegram) ·
+Images: [Docker Hub](https://hub.docker.com/r/fastiuk/email2telegram),
+[GHCR](https://github.com/fastiuk/email2telegram/pkgs/container/email2telegram)
 
 It watches an IMAP mailbox and forwards new mails (text, HTML, embedded images and attachments)
 to a Telegram chat via your bot. Forwarded mails are marked as read in the mailbox.

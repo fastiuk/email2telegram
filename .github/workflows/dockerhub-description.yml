@@ -25,6 +25,7 @@ jobs:
         username: ${{ vars.DOCKERHUB_USERNAME || github.repository_owner }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
         repository: ${{ github.repository }}
-        short-description: Forward IMAP email (text, images, attachments) to a Telegram chat via your bot
+        # same text as the GitHub repository description
+        short-description: ${{ github.event.repository.description }}
         readme-filepath: ./README.md
         enable-url-completion: true
